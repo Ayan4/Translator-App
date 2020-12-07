@@ -40,6 +40,10 @@ textarea{
     border: 1px black solid;
 }
 
+#text-input{
+    font-family: 'Poppins', sans-serif;
+}
+
 #output{
     width: 720px;
     height: 13vh;
