@@ -1,6 +1,7 @@
 const translateBtn = document.querySelector('#click');
 const textInput = document.querySelector('#text-input');
 const output = document.querySelector('#output');
+const clearBtn = document.querySelector('#clear');
 
 const url = 'https://api.funtranslations.com/translate/minion.json';
 
@@ -9,7 +10,7 @@ const getTranslationURL = (text) =>{
 }
 
 const errorHandler = (error) =>{
-    alert(`something went wrong : ${error}`)
+    alert(`Cannot leave blank`)
 }
 
     translateBtn.addEventListener('click', () =>{
@@ -22,3 +23,8 @@ const errorHandler = (error) =>{
         })
         .catch(errorHandler);
     })
+
+clearBtn.addEventListener('click', () =>{
+    textInput.value = '';
+    output.innerText = '';
+})

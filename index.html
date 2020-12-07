@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src='app.js' defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,600&display=swap" rel="stylesheet">
     <title>Banana Talk</title>
 
-    <style>
-        textarea{
-            width: 80%;
-            height: 10vh;
-            display: block;
-            margin: 1rem auto;
-            padding: 1rem;
-        }
-
-        #output{
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem auto;
-            padding: 1rem;
-        }
-    </style>
 </head>
 <body>
-    <h1>Talk Banana</h1>
-    <textarea id='text-input'></textarea>
-    <button id='click'>Click me</button>
+    <header>
+        <img class='logo' src="banana.svg" alt="">
+    </header>
 
-    <div styles='font-size: larger;'>Output will come here</div>
-    <div id="output"></div>
+    <main>
+        <div class="center">
+            <textarea id='text-input' placeholder="Enter text in English..."></textarea>
+            <button id='click'>Translate</button>
+            <button id='clear'>Clear</button>
+    
+            <p class='trans'>Translation 👇</p>
+            <div id="output"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-center">
+            <h3>About</h3>
+            <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</p>
+        </div>
+    </footer>
 </body>
 </html>
